@@ -1,0 +1,186 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: url(../images/bg-mobile.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.nav-menu {
+  background: hsl(228, 56%, 26%);
+  width: 85%;
+  height: 200px;
+  border-radius: 10px 100px 10px 10px;
+  margin: 130px auto 15px auto;
+}
+
+.logo {
+  padding: 40px 40px 20px 40px;
+}
+
+.nav-buttons {
+  margin: 0 0 0 30px;
+}
+
+.btn {
+  background: hsl(229, 57%, 11%);
+  border-style: none;
+  border-radius: 10px;
+  width: 50px;
+  height: 50px;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+.storage {
+  position: relative;
+  background: hsl(228, 56%, 26%);
+  width: 85%;
+  height: 160px;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.storage p {
+  color: hsl(243, 100%, 93%);
+  font-size: .9rem;
+  padding: 30px 0 20px;
+  text-align: center;
+}
+
+.progress-bar {
+  background: hsl(229, 57%, 18%);
+  height: 14px;
+  width: 80%;
+  border-radius: 10px;
+  border: solid 3px hsl(229, 57%, 18%);
+  margin: auto;
+}
+
+.progress-gauge {
+  position: relative;
+  background: linear-Gradient(.25turn, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height: 14px;
+  width: 75%;
+  border-radius: 10px;
+}
+
+.progress-icon {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: hsl(243, 100%, 93%);
+  margin: 1px;
+  right: 0;
+}
+
+.min {
+  position: absolute;
+  font-size: .8rem;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+  left: 10%;
+  padding-top: 10px;
+}
+
+.max {
+  position: absolute;
+  font-size: .8rem;
+  font-weight: 700;
+  color: hsl(243, 100%, 93%);
+  right: 10%;
+  padding-top: 10px;
+}
+
+.notification {
+  background-color: white;
+  width: 185px;
+  height: 75px;
+  border-radius: 10px;
+  margin: 40px auto;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: hsl(229, 57%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gb-left {
+  color: hsl(229, 7%, 55%);
+  letter-spacing: 1px;
+  font-size: .8rem;
+  padding-left: 10px;
+}
+
+@media only screen and (min-width:1366px) {
+  html {
+    background: hsl(229, 57%, 11%);
+    background-image: url(../images/bg-desktop.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+  }
+
+  .wrapper {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -495px;
+    margin-top: -100px;
+  }
+
+  .nav-menu {
+    position: relative;
+    display: inline-block;
+    width: 360px;
+    margin: 0 30px 0 0;
+  }
+
+  .storage {
+    display: inline-block;
+    position: absolute;
+    width: 600px;
+    margin-top: 40px;
+  }
+
+  .storage p {
+    text-align: left;
+    margin-left: 10%;
+  }
+
+  .notification {
+    width: 190px;
+    position: relative;
+    background: white;
+    margin: -140px 30px auto auto;
+  }
+
+  .notification:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 0;
+    border: 40px solid transparent;
+    border-top-color: white;
+    border-bottom: 0;
+    border-right: 0;
+    margin-left: -29px;
+    margin-bottom: -30px;
+  }
+}
